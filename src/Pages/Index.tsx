@@ -16,7 +16,7 @@ function Index() {
 
     useEffect(() => {
         const fetchJobs = async () => {
-            const url = import.meta.env.VITE_API_BASE_URL+'/jobs';
+            const url = 'http://54.65.12.75/jobs';
             try {
                 const response = await fetch(url, {
                     method: 'GET'

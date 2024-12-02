@@ -38,7 +38,7 @@ const ChatPage = () => {
 
     const postChat = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        const url = import.meta.env.VITE_API_BASE_URL+'/prompts';
+        const url = 'http://54.65.12.75/prompts';
         try {
             const userMessage: Chat = { text: chat, role: 'user' };
             const updatedHistory = [...chatHistory, userMessage];
