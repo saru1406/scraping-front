@@ -16,7 +16,7 @@ function Index() {
 
     useEffect(() => {
         const fetchJobs = async () => {
-            const url = 'http://54.65.12.75/jobs';
+            const url = 'https://54.65.12.75/jobs';
             try {
                 const response = await fetch(url, {
                     method: 'GET'
